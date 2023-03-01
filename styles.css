@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 90%;
+    max-width: 1680px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas:
+        "sidebar top     top"
+        "sidebar content content"
+        "sidebar content content"
+
+    ;
+    gap: 20px;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.top {
+    grid-area: top;
+}
+.content {
+    grid-area: content;
+}
